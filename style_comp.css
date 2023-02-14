@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    --primary: #11f3d1;
+    --light : #3ce7b1;
+    --dark : #120e45;
+    --wi : 400px ; 
+}
+body{
+    background-color: var(--dark);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    /* position: relative;
+    width: 500px;
+    height: 600px; */
+    /* position: absolute; */
+    /* margin: 0 auto ; */
+    /* display :flex; */
+    /* align-items:center; */
+    /* justify-content: space-around; */
+    /* min-height: 100vh; */
+    /* width: 400px; */
+    position: relative;
+    flex-direction: column;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.book{
+    display: flex;
+    width: 100%;
+}
+
+.book h2{
+    position: relative;
+    width: 100%;
+}
+
+
+.book h2 a {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    text-decoration:none ;
+    color: var(--light);
+    border: 2px solid var(--light);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.book:hover{
+    transform: translate(20px , -10px ) ;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    
+}
+
+.book h2 a:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+
